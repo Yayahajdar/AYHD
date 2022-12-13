@@ -1,0 +1,367 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  background-color: #b71b1b;  
+  
+}
+
+
+nav{ 
+  background-color: rgb(255, 255, 255);
+   color: rgb(15, 12, 12);
+   width: 100%;
+   padding: 10px 40px 10px 50px;
+   height: fit-content;
+}
+nav ul li.logo {
+  flex: 1;
+}
+nav ul li.title-page {
+ font-size: 30px;
+  margin: 0px 100px 0px 0px;
+  
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+
+}
+
+.multicolor {
+  background-image: linear-gradient(to left,  violet, indigo, green, blue, yellow, orange, red);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+#menu__toggle {
+  opacity: 0;
+}
+#menu__toggle:checked + .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked + .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0deg);
+}
+#menu__toggle:checked + .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+  left: 0 ;
+}
+.menu__btn {
+  position:relative;
+  left: 45px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  z-index: 1;
+  padding: 15px ;
+bottom:0px;
+}
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-image: linear-gradient(45deg, violet, indigo, green, blue, yellow, orange, red);
+  transition-duration: .25s;
+
+}
+.menu__btn > span::before {
+  content: '';
+  top: -8px;
+}
+.menu__btn > span::after {
+  content: '';
+  top: 8px;
+}
+.menu__box {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 300px;
+  height: 100%;
+  margin: 0;
+  padding: 80px 0;
+  list-style: none;
+  background-color: #87f0b4;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+  transition-duration: .25s;
+}
+.menu__item {
+  display: block;
+  padding: 12px 24px;
+  color: rgb(2, 172, 59);
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  transition-duration: .25s;
+}
+.menu__item:hover {
+  background-color: #191717;
+}
+
+
+#column {
+  padding: 10px;
+}
+
+.col1 {
+  background-color:transparent; float: left; width: 40%;
+text-align: center;
+}
+
+.col2 {
+  background-color:transparent;float: left;width: 45%;}
+.col3 {
+  background-color:transparent; float: right; width: 5%;
+}
+
+
+
+
+  
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.mf-social-side-list {
+  position: block;
+  top: 30vh;
+  right: 5px;
+  z-index: 100;
+  margin: 15px;
+}
+.mf-social-side-list ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+ padding: 0;
+ margin:0
+}
+.mf-social-side-list ul li a {
+  color: #ffffff;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  margin-top: 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  -webkit-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+.mf-social-side-list ul li a:hover {
+  opacity: .9;
+  -webkit-transform: translateY(-3px);
+  transform: translateY(-3px);
+}
+.mf-social-side-list ul li a {
+  background: #3b5998;
+}
+.mf-social-side-list ul li a[href*='instagram'] {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);;
+}
+.mf-social-side-list ul li a[href*='linkedin'] {
+  background: #0077B5;
+}
+.mf-social-side-list ul li a[href*='twitter'] {
+  background: #00acee;
+}
+
+
+
+
+/* Style the footer */
+   footer{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(255, 255, 255);
+    width:100%;
+    bottom: 0px;
+    height: 10vh ;
+    padding: 10px;
+    color: rgb(16, 14, 14);
+    line-height: 1.28;
+    background-color: transparent;
+
+  
+}
+
+
+input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid ~ label {
+  font-size: 0.75em;
+  color: #999;
+  padding:12px;
+  -webkit-transition: all 0.225s ease;
+  transition: all 0.225s ease;
+}
+
+.styled-input {
+  float: left;
+  width: 100%;
+  margin: 1rem 0;
+  position: relative;
+  border-radius: 4px;
+
+}
+
+.styled-input label {
+  color: #999;
+  padding: 1.3rem 30px 1rem 30px;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  pointer-events: none;
+}
+
+.styled-input.wide { 
+  width: 650px;
+  max-width: 100%;
+}
+
+input,
+textarea {
+  padding: 30px;
+  border: 0px;
+  width: 100%;
+  font-size: 1rem;
+  background-color: #b5e7cd;
+  color: rgb(241, 142, 48);
+  border-radius: 4px;
+
+}
+textarea {
+  width: 100%;
+  min-height: 15em;
+}
+
+.input-container {
+  width: 650px;
+  max-width: 100%;
+  margin: 20px auto 25px auto;
+}
+
+.submit-btn {
+  float: right;
+  padding: 7px 35px;
+  border-radius: 60px;
+  display: inline-block;
+  background-color: #21e124;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.06),
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+.submit-btn:hover {
+  transform: translateY(1px);
+  box-shadow: 0 1px 1px 0 rgba(180, 70, 70, 0.1),
+}
+
+.footer-il{
+  flex: content;
+  margin-top: 10px;
+  margin-left: 600px;
+
+  }
+.footer-but{
+
+}
+footer .footer-but a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+footer .footer-but a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.previous {
+  background-color: #26e80c;
+  color: black;
+}
+
+.next {
+  background-color: #26e80c;
+  color: rgb(11, 11, 11);
+}
+
+.round {
+  border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+  .submit-btn {
+      width:100%;
+      float: none;
+      text-align:center;
+  }
+  .styled-input {
+    width:100%;}
+}
+
+input[type=checkbox] + label {
+color: #ccc;
+font-style: italic;
+} 
+
+input[type=checkbox]:checked + label {
+color: #f00;
+font-style: normal;
+}
+
+@media only screen and (max-width:600px)
+{
+  #column {width: 100%;
+  height: auto;
+  }
+.mf-social-side-list{
+  padding: 0px;
+
+}
+
+  .mf-social-side-list ul {
+  flex-direction: row;
+  justify-content: center;
+ }
+ .mf-social-side-list ul li a{
+  margin:10px;
+ }
+
+ .menu__box{
+bottom: 0;
+ }
+ .footer-il{
+  margin-top: 10px;
+  margin-left:70px;
+  }
+}
