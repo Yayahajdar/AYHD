@@ -34,7 +34,9 @@ header ul {
 header {
   height: 70px;
 }
-
+.main-page {
+  height: 500px;
+}
 .logo img {
   width: 124px;
   height: 78px;
@@ -120,6 +122,8 @@ header {
 
 footer {
   width: 100%;
+  position: absolute;
+    bottom: 0;
 
 }
 
@@ -131,7 +135,7 @@ footer {
 }
 
 .footer-infos {
-  width: 78%;
+  width: 50%;
   text-align: center;
   margin-top: 30px
 }
@@ -309,16 +313,59 @@ footer {
   position: relative;
   scrollbar-width:none;
   -ms-overflow-style: none;
+  height: max-content;
 }
 
 section {
   display: flex;
   align-items: center;
-  height: calc(100vh - var(--scrollbar-height));
-  min-width: 100vw;
+height: fit-content; 
+ min-width: 100vw;
   scroll-snap-align: start;
   font-size: 2ch;
   position: inherit;
+}
+.contact1-form-btn1 {
+  min-width: 80px;
+  height: 30px;
+  border-radius: 25px;
+  background: #e5a717;
+  font-family: Montserrat-Bold;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 25px;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+margin-left: 5px;
+
+}
+.contact1-form-btn1:hover {
+  background: #333333;
+}
+
+.news{
+  display: flex;
+}
+.news h4{
+  margin: 9px;
+}
+.news input{
+  display: block;
+  width: 100%;
+  background: #fffefe;
+  font-family: Montserrat-Bold;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #666666;
+  height: 30px;
+    border-radius: 25px;
+    padding: 0 30px;
 }
 
 .container-main::-webkit-scrollbar {
@@ -326,7 +373,7 @@ section {
 }
  .imge img{
   width: 728px;
-    height: 575px;
+    height: 470px;
     margin-top: -39px;
     position: relative;
     right: 111px;
@@ -334,20 +381,21 @@ section {
  }
  .imge {
   width: 100%;
-  height: 550px;
+ 
  }
 .row {
   display: flex;
   flex-direction: row;
   width: 100%;
-  height: 100%;
+  height: 470px;
+  top: 20px;
+  position: absolute;
 }
 
 .about-text{
   width: 100%;
   margin-top: 50px;
-  display: flex;
-  flex-direction: column;
+  
 }
 .tit {
   font-size: 40px;
@@ -390,6 +438,7 @@ section {
   width: 100%;
   position: relative;
      left: 200px;
+     top: 20%;
 }
 
 .ho-tex h2 {
@@ -401,6 +450,12 @@ section {
   color: rgba(255,255,255,.70);
 }
 
+
+.footer-container{
+  width: 100%;
+  display: flex;
+ 
+}
 /* Animation */
 
 .ho-tex h2 {
@@ -456,6 +511,8 @@ section {
    @media screen and (min-width: 1920px) {
     section {
       height: 800px;
+      display: block;
+
     }
   }
   
@@ -468,9 +525,6 @@ section {
       display: none;
     }
   
-    .container-main {
-      display:block;
-      
     }
   
     .navga {
@@ -478,19 +532,18 @@ section {
     }
   
     .footer-infos {
-      width: 100%;
+      width: 50%;
     }
   
     header ul {
       display: block;
-      text-align: center;
-      padding: 0;
+          padding: 0;
     }
   
     .footer-infos {
       padding-bottom: 20px;
     }
-  }
+
 
 
 /* Animate Background Image */
@@ -519,9 +572,7 @@ section {
     display: none;
   }
 
-  .footer-infos {
-    width: 100%;
-  }
+  
 
   header ul {
     display: block;

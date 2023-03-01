@@ -1,6 +1,8 @@
+
+      
       
       <?php $nav='experience' ?>
-      <div class="row">
+      <div class="row1">
         <div class="container-switch" id="">
           <div class="slider__warpper">
             <div class="container-flex flex--dep flex-active" data-slide="1">

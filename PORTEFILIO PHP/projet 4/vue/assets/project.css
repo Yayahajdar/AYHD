@@ -9,7 +9,8 @@
   background: rgb(139 127 110 / 50%);
   position: relative;
  margin: 0 auto;
- height: 100%;
+ height: 477px;
+    top: 20px;
 }
 .container-projet {
   display: flex;
