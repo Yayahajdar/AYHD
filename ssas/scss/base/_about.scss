@@ -1,0 +1,205 @@
+/* about */
+.about-text{
+  width: 30vw;
+  margin-top: 50px;
+  
+}
+.container2 {
+  padding: 100px 0;
+  padding-left: 30px;
+}
+
+.profile {
+  margin: 0 auto;
+  background-color: orange;
+  padding: 30px;
+  border-radius: 10px;
+  position: relative;
+  height: 40vh;
+}
+.profile h2 {
+  color: #0a0a0a;
+  padding: 30px;
+}
+.profile p {
+  color: rgba(10, 10, 10, 0.8);
+}
+.profile .image {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  margin: 0 auto;
+  position: absolute;
+  right: -15px;
+  top: -28px;
+  transform-origin: bottom left;
+  box-shadow: 0 3px 15px rgba(10, 10, 10, 0.1);
+  transition: all 0.3s ease-in-out;
+  background-image: url("../../Images/1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.profile:hover .image {
+  transform: scale(1.5);
+  border-radius: 10px;
+}
+
+/* .....skill ...... */
+
+a {
+    text-decoration: none;
+  }
+  
+  .social-media-flex {
+    display: flex;
+  }
+  .social-media-flex-justify-content {
+    justify-content: center;
+  }
+  .social-media-flex-align-items {
+    align-items: center;
+  }
+  
+  .social-media-grid {
+    display: grid;
+  }
+  .social-media-grid-gap {
+    grid-gap: 0.5em;
+  }
+  
+  .main-container-social {
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+  }
+  
+  .container-social {
+    grid-template-rows: repeat(2, 1.5em);
+    border-radius: 0.25em;
+    padding: 0.5em;
+    background-color: #262626;
+    box-shadow: 0 0 0.25em #262626;
+  }
+  
+  .social-links {
+    grid-template-columns: repeat(3, 2em);
+    grid-gap: 0.5em;
+    z-index: 100;
+  }
+  
+  .social-link {
+    font-size: 1.5rem;
+    color: #bfbfbf;
+    transition: 0.3s all ease;
+    transition-timing-function: cubic-bezier(0, -0.5, 0, 0.5);
+  }
+  .social-link:hover {
+    color: #f2f2f2;
+    transform: translateY(-0.1em);
+    transition-timing-function: cubic-bezier(0.5, -1.5, 0.5, 1.5);
+  }
+  
+  .made {
+    display: block;
+    color: #f2f2f2;
+    font-size: 0.75rem;
+    text-align: center;
+  }
+  .skillbar {
+    position: relative;
+    display: block;
+    margin-bottom: 15px;
+    width: 100%;
+    background: #eee;
+    height: 20px;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -webkit-transition: 0.4s linear;
+    -moz-transition: 0.4s linear;
+    -ms-transition: 0.4s linear;
+    -o-transition: 0.4s linear;
+    transition: 0.4s linear;
+    -webkit-transition-property: width, background-color;
+    -moz-transition-property: width, background-color;
+    -ms-transition-property: width, background-color;
+    -o-transition-property: width, background-color;
+    transition-property: width, background-color;
+  }
+  /* seccion del texto de la barra */
+  .skillbar-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: auto;
+    font-weight: bold;
+    font-size: 13px;
+    color: #ffffff;
+    background: #6adcfa;
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-bottom-left-radius: 4px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+  }
+  
+  .skillbar-title span {
+    display: block;
+    background: rgba(0, 0, 0, 0.1);
+    padding: 0 5px;
+    height:20px;
+    line-height: 20px;
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+  }
+  
+  .skillbar-bar {
+    height: 20px;
+    width: 0px;
+    background: #6adcfa;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+  }
+  
+  .skill-bar-percent {
+    position: absolute;
+    right: 10px;
+    top: 0;
+    font-size: 11px;
+    height: 20px;
+    line-height: 20px;
+    color: #ffffff;
+    color: rgba(0, 0, 0, 0.4);
+  }
+.skill-con{
+  width: 50vw;
+  margin: 74px 123px 0;
+}  
+
+@media (max-width: 768px) {
+ .tit{
+  display: none;
+ }
+.container2{
+  margin-top: -60px;
+  padding-top: 40px;
+}
+ .about-text{
+  margin-top: -40px;
+  width: 77vw;
+ }
+ .skill-con {
+  margin: -59px 27px 0;
+
+  }
+
+
+
+}
